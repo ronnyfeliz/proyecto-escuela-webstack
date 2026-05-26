@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="../css/inscripcion.css">
+</head>
+
+<body>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Escuela San Miguel</div>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="actividades.html">Actividades</a></li>
+            <li><a href="inscripcion.html">Inscripción</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    </nav>
+
+    <!-- FORMULARIO-->
+    <section id="inscripcion" class="section">
+        <div class="container">
+            <h2>Formulario de Pre-Inscripción</h2>
+            <div class="form-intro">
+                <p>Complete este formulario para iniciar el proceso de inscripción de su hijo/a. Nos pondremos en
+                    contacto con usted en breve.</p>
+            </div>
+            <form class="registro-form" onsubmit="return validarFormulario(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre-estudiante">Nombre completo del estudiante *</label>
+                        <input type="text" id="nombre-estudiante" name="nombre-estudiante" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="edad">Edad *</label>
+                        <input type="number" id="edad" name="edad" min="5" max="13" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="grado">Grado a inscribir *</label>
+                        <select id="grado" name="grado" required>
+                            <option value="">Seleccione un grado</option>
+                            <option value="1">1° Grado</option>
+                            <option value="2">2° Grado</option>
+                            <option value="3">3° Grado</option>
+                            <option value="4">4° Grado</option>
+                            <option value="5">5° Grado</option>
+                            <option value="6">6° Grado</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de nacimiento *</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre-padre">Nombre del padre/madre o tutor *</label>
+                    <input type="text" id="nombre-padre" name="nombre-padre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo electrónico *</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono de contacto *</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="8091234567"
+                        required>
+                    <small>Formato: 10 dígitos sin guiones</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Crear contraseña *</label>
+                    <input type="password" id="password" name="password" required minlength="6">
+                    <small>Mínimo 6 caracteres (para acceso al portal de padres)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar contraseña *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentarios">Comentarios adicionales</label>
+                    <textarea id="comentarios" name="comentarios" rows="4"
+                        placeholder="¿Tiene alguna necesidad especial o comentario que debamos conocer?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" required>
+                        Acepto los términos y condiciones de la escuela *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Enviar Pre-Inscripción</button>
+                <div id="mensaje" class="mensaje"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Escuela Primaria San Miguel</h3>
+                <p>Formando niños felices, estudiantes excelentes y ciudadanos responsables desde 1998.</p>
+                <p class="school-motto"> "Educando con amor y excelencia" </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="inscripcion.html">Inscripción</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                    <a href="#" target="_blank">YouTube</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Información</h3>
+                <ul>
+                    <li>Reglamento Escolar</li>
+                    <li>Calendario Académico</li>
+                    <li>Métodos de Pago</li>
+                    <li>Reconocimientos</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Escuela Primaria San Miguel. Todos los derechos reservados.</p>
+            <p>Ministerio de Educación: #12345-2025</p>
+        </div>
+    </footer>
+
+    <script src="../js/inscripciones.js"></script>
+</body>
+
+</html>

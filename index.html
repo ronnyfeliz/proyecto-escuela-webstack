@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Primaria San Miguel</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<!-- MENU DE NAVEGACION -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Escuela San Miguel</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="html/nosotros.html">Nosotros</a></li>
+            <li><a href="html/actividades.html">Actividades</a></li>
+            <li><a href="html/inscripcion.html">Inscripción</a></li>
+            <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- SECCION DE INICIO/CARRUSEL -->
+<section id="inicio" class="hero">
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="img/1.jpg" alt="Educación de calidad">
+            <div class="slide-text">Educación de Calidad para tu Hijo</div>
+        </div>
+        <div class="slide fade">
+            <img src="img/2.jpg" alt="Instalaciones">
+            <div class="slide-text">Instalaciones Modernas y Seguras</div>
+        </div>
+        <div class="slide fade">
+            <img src="img/3.jpg" alt="Maestros">
+            <div class="slide-text">Educadores Profesionales</div>
+        </div>
+        <div class="slide fade">
+            <img src="img/4.jpg" alt="Deportes">
+            <div class="slide-text">Actividades Deportivas y Culturales</div>
+        </div>
+        <div class="slide fade">
+            <img src="img/5.jpg" alt="Futuro">
+            <div class="slide-text">Formando el Futuro de República Dominicana</div>
+        </div>
+
+        <!-- CONTROL DE CARRUSEL -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+        <!-- INDICADORES -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+</section>
+
+<!-- NIVELES EDUCATIVOS-->
+<section id="niveles" class="section">
+    <div class="container">
+        <h2>Niveles Educativos</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-icon">📚</div>
+                <h3>1° a 3° Grado</h3>
+                <p>Primer Ciclo: Desarrollo de habilidades básicas de lectoescritura, matemáticas y conocimiento del
+                    entorno.</p>
+            </div>
+            <div class="service-card">
+                <div class="card-icon">✏️</div>
+                <h3>4° a 6° Grado</h3>
+                <p>Segundo Ciclo: Fortalecimiento de competencias académicas y preparación para la educación
+                    secundaria.</p>
+            </div>
+            <div class="service-card">
+                <div class="card-icon">🎨</div>
+                <h3>Actividades Extracurriculares</h3>
+                <p>Arte, música, deportes, robótica y más actividades para el desarrollo integral de nuestros
+                    estudiantes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Escuela Primaria San Miguel</h3>
+            <p>Formando niños felices, estudiantes excelentes y ciudadanos responsables desde 1998.</p>
+            <p class="school-motto"> "Educando con amor y excelencia" </p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Enlaces Rápidos</h3>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/nosotros.html">Nosotros</a></li>
+                <li><a href="html/actividades.html">Actividades</a></li>
+                <li><a href="html/inscripcion.html">Inscripción</a></li>
+                <li><a href="html/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Síguenos</h3>
+            <div class="social-links">
+                <a href="#" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+                <a href="#" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+                <a href="#" target="_blank" class="twitter">
+                    <i class="fa-brands fa-x-twitter"></i> Twitter
+                </a>
+                <a href="#" target="_blank" class="youtube">
+                    <i class="fa-brands fa-youtube"></i> YouTube
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="footer-section">
+            <h3>Información</h3>
+            <ul>
+                <li>Reglamento Escolar</li>
+                <li>Calendario Académico</li>
+                <li>Métodos de Pago</li>
+                <li>Reconocimientos</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Escuela Primaria San Miguel. Todos los derechos reservados.</p>
+        <p>Ministerio de Educación: #12345-2025</p>
+    </div>
+</footer>
+
+<script src="js/carrusel.js">
+
+</script>
+</body>
+
+</html>
