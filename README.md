@@ -172,8 +172,7 @@ http://localhost/escuela_proyecto/Bases%20de%20datos%20y%20PHP/escuela%20San%20M
 | Ronny Sebastián Feliz Mejía | Estructura y maquetación HTML |
 | Adrián Martínez | JavaScript y validaciones |
 | Ángel Daviel Soriano Mora | Base de datos MySQL y modelo relacional |
-| José Joaquín | Backend PHP |
-| Equipo CSS/Diseño | Estilos visuales y personalización del frontend |
+| José Joaquín | Backend PHP y Estilos visuales y personalización del frontend |
 
 ---
 
