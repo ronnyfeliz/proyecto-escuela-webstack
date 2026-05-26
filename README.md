@@ -74,8 +74,6 @@ escuela_proyecto/
 │   ├── Inscripciones.js           # Validación de inscripción
 │   └── Contacto.js                # Validación de contacto
 │
-├── fotos/                         # Imágenes del sitio
-│
 ├── php/                           # API REST (CRUD estudiantes)
 │   ├── conexion.php
 │   ├── insertar_estudiante.php
@@ -134,11 +132,11 @@ escuela_proyecto/
 
 | Integrante | Rol |
 |------------|-----|
-| **[Tu Nombre]** | **Estructura y maquetación HTML del sitio público** |
-| Integrante 2 | Estilos CSS y diseño visual |
+| **Ronny** | **Estructura y maquetación HTML del sitio público** |
+| **Adrian** | Estilos CSS y diseño visual |
 | Integrante 3 | Lógica JavaScript y validaciones |
 | Integrante 4 | Backend PHP y conexión a base de datos |
-| Integrante 5 | Base de datos y modelo relacional |
+| Integrante 4 | Base de datos y modelo relacional |
 
 > *Completa los nombres según corresponda.*
 
@@ -150,9 +148,10 @@ escuela_proyecto/
 
 | Vista Previa | Descripción |
 |--------------|-------------|
-| | Página de inicio con carrusel |
-| | Formulario de preinscripción |
-| | Panel administrativo |
+|<img width="1351" height="613" alt="image" src="https://github.com/user-attachments/assets/dafeec83-9ef0-4d77-907a-0807486253c7" />
+ | Página de inicio con carrusel |
+|<img width="1349" height="610" alt="image" src="https://github.com/user-attachments/assets/e3804955-96ac-4770-98bc-368cbdd41488" />
+ | Formulario de preinscripción |
 
 ---
 
